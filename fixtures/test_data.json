@@ -1,0 +1,43 @@
+{
+  "users": {
+    "valid_user": {
+      "first_name": "John",
+      "last_name": "Doe",
+      "email": "john.doe@techcorp.com",
+      "department": "Engineering",
+      "title": "Software Engineer"
+    },
+    "admin_user": {
+      "email": "admin@techcorp.com",
+      "password": "AdminPass123!",
+      "role": "admin"
+    },
+    "regular_user": {
+      "email": "user@techcorp.com",
+      "password": "UserPass123!",
+      "role": "user"
+    }
+  },
+  "tenants": {
+    "tenant_001": {
+      "name": "TechCorp Inc",
+      "domain": "techcorp.com",
+      "admin_email": "admin@techcorp.com"
+    },
+    "tenant_002": {
+      "name": "StartupXYZ",
+      "domain": "startupxyz.com",
+      "admin_email": "admin@startupxyz.com"
+    }
+  },
+  "test_scenarios": {
+    "password_reset": {
+      "valid_email": "test.user@techcorp.com",
+      "invalid_email": "nonexistent@techcorp.com"
+    },
+    "bulk_operations": {
+      "user_ids": ["user_001", "user_002", "user_003"],
+      "departments": ["IT", "Engineering", "Sales", "Marketing"]
+    }
+  }
+}
